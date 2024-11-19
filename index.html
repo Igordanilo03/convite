@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Criativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Mensagem Inicial -->
+        <h1>Iae! Amanda 🛍️</h1>
+        <p>Que tal um passeio no shopping comigo?</p>
+
+        <!-- Botões de Ação -->
+        <div id="buttons">
+            <button id="acceptBtn" class="btn">Aceitar (はい)</button>
+            <button id="convinceBtn" class="btn">Me convença... 説得します</button>
+        </div>
+
+        <!-- Galeria Interativa -->
+        <div id="gallery" class="hidden">
+            <h2>Olha só o que podemos fazer juntos: 🎉</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="images/cinema.jpg" alt="Cinema">
+                    <p>Assistir Algum filme! 🍿</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/fliperama.jpeg" alt="Fliperama">
+                    <p>Uma batalha épica no game! 🎮</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="alimentacao.jpg" alt="Pizza">
+                    <p>Comer aquele lanche para recuperar as energias! 🍕</p>
+                </div>
+            </div>
+
+            <!-- Botões de Decisão -->
+            <div id="decision">
+                <button id="noBtn" class="btn">Não vou mesmo assim (やっぱりいいえ)</button>
+                <button id="yesBtn" class="btn">Me convenceu! (分かりました)</button>
+            </div>
+        </div>
+
+        <!-- Calendário -->
+        <div id="calendarContainer" class="hidden">
+            <h2>Escolha um dia para irmos:</h2>
+            <div id="calendar">
+                <div class="month">
+                    <button id="prevMonth" class="nav-btn">←</button>
+                    <h3 id="monthYear"></h3>
+                    <button id="nextMonth" class="nav-btn">→</button>
+                </div>
+                <div class="weekdays">
+                    <span>Dom</span>
+                    <span>Seg</span>
+                    <span>Ter</span>
+                    <span>Qua</span>
+                    <span>Qui</span>
+                    <span>Sex</span>
+                    <span>Sáb</span>
+                </div>
+                <div class="days" id="days"></div>
+            </div>
+            <button id="confirmDate" class="btn">Confirmar (確定)</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
